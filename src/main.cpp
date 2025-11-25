@@ -6,9 +6,12 @@ int main() {
   std::cout << std::unitbuf;
   std::cerr << std::unitbuf;
 
-  // Uncomment this block to pass the first stage
   std::cout << "$ ";
 
-  std::string input;
-  std::getline(std::cin, input);
+  // Captures the user's command in the "command" variable
+  std::string command;
+  std::getline(std::cin, command);
+
+  // Prints the "<command>: command not found" message
+  std::cout << command << ": command not found" << std::endl;
 }
